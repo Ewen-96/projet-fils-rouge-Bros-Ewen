@@ -1,23 +1,28 @@
 /* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0 250px; 
+    padding: 0;
     background-color: #0A1B24;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+  
+h2 {
     font-family: 'Yeseva One', serif;
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 20px;
 }
 
-h1 span {
+h3 {
+    font-family: 'Yeseva One', serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 20px;
     color: #00ff9d;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -49,8 +54,21 @@ footer {
     margin: 20px 0;
     font-size: 0.9rem;
 }
+.ligne-blanche {
+    border: none; 
+    height: 1px; 
+    background-color: white; 
+    width: 100%; 
+}
+.container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh;
+    text-align: left;
+    padding-left: 20px;
+}
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
