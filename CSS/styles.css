@@ -42,7 +42,12 @@ header nav a {
 }
 
 main {
-  width: 90%;
+  width: 80%;
+  margin: auto;
+  padding-top: 3em;
+}
+.text-block {  
+  width: 6%;
   margin: auto;
   padding-top: 3em;
 }
@@ -64,7 +69,8 @@ main p {
 
 main nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; 
+  gap: 0.5em; 
   margin-bottom: 2em;
 }
 
@@ -74,6 +80,9 @@ main nav button {
   border: none;
   font-weight: lighter;
   padding: 0.5em;
+  font-size: 1em;
+  margin: 0 0.5em;
+  border-radius: 5px;
 }
 
 main nav button:nth-child(2) {
@@ -113,9 +122,25 @@ footer p:last-child {
       display: none;
     }
   
-    .grid img:nth-child(-n+9) {
+    .grid img:nth-child(-n+9) {/* Affiche les 9premier im*/
       display: block;
     }
+
+    main {
+      width: 90%;
+      margin: auto;
+      padding-top: 3em;
+    }
+    main nav button {
+      font-size: 0.55em;
+      margin: auto;
+      
+    }
+    header nav{
+      display: flex;
+      flex-direction: center;
+      padding: 1em;
+      }
   }
 
 /*ordinateur*/
@@ -124,6 +149,10 @@ footer p:last-child {
   main h2,
   main p {
     width: 60%;
+  }
+  main {
+    width: 80%;
+    margin: auto;
   }
 
   main nav button {
